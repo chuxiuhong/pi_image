@@ -12,4 +12,5 @@ def get_photo(request):
     return HttpResponse('i get it')
 
 def show_photo(request):
+    os.system('cp /home/pi/current.jpg /home/pi/pi_image/static/current_photo.jpg')
     return render(request,'show_image.html',{})
